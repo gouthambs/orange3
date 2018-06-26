@@ -316,7 +316,7 @@ class OWKMeans(widget.OWWidget):
             self._compute_clustering,
             data=self.data,
             k=k,
-            init=['random', 'k-means++'][self.smart_init],
+            init=['k-means++', 'random'][self.smart_init],
             n_init=self.n_init,
             max_iter=self.max_iterations,
             silhouette=True,
